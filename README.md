@@ -89,6 +89,16 @@ Future releases will expand into code generation and previews.
 
 ---
 
+## Execution & Security
+
+This extension runs a local Python script for code generation.
+Execution occurs only after explicit user action.
+
+No telemetry, background execution, or automatic uploads occur.
+All generated files remain on the user's machine.
+
+---
+
 ## Roadmap
 
 * Generate actual FastAPI boilerplate code
