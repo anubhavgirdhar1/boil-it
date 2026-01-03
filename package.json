@@ -1,15 +1,23 @@
 {
   "name": "boil-it",
   "displayName": "Boil It",
-  "description": "This extension helps seasoned developers to avoid writing redundant boilerplate code for various arch. types for sophisticated python backends using an AI Agent.",
+  "description": "This extension helps seasoned developers avoid writing redundant boilerplate code for sophisticated Python backends using an AI agent.",
   "version": "0.0.1",
   "publisher": "AGirdhar",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anubhavgirdhar1/boil-it"
+  },
+  "homepage": "https://github.com/anubhavgirdhar1/boil-it",
   "engines": {
     "vscode": "^1.104.0"
   },
-  "categories": [
-    "Other"
-  ],
+  "categories": ["Other"],
+  "extensionKind": ["workspace"],
+  "capabilities": {
+    "virtualWorkspaces": false
+  },
   "activationEvents": [
     "onView:boilItView"
   ],
