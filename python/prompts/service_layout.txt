@@ -1,0 +1,38 @@
+You are designing a production-grade FastAPI microservice folder structure.
+
+Inputs:
+- service_name: {{{{service_name}}}}
+- app_type: {{{{app_type}}}}
+- description: {{{{description}}}}
+
+Rules:
+- Return ONLY valid JSON
+- No markdown
+- No explanations
+- No extra keys
+
+The JSON must follow this schema exactly:
+
+{{
+  "structure": {{
+    "type": "folder",
+    "name": "<service_name>",
+    "description": "<what this service does>",
+    "children": [
+      {{
+        "type": "folder",
+        "name": "<folder name>",
+        "description": "<purpose of this folder and its files>",
+        "children": [
+          {{ "type": "file", "name": "<file name>" }}
+        ]
+      }}
+    ]
+  }}
+}}
+
+Guidelines:
+- Use realistic FastAPI architecture
+- Include folders like apis, schemas, services, utils, core, etc where appropriate
+- Use the description input to influence structure depth
+- Every folder MUST include a high level description of its files and their usage - a detailed one
